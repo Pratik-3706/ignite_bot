@@ -1,0 +1,34 @@
+# Environment variables & secrets
+.env
+*.env
+!.env.example
+
+# Python virtual environment & cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Bot Memory & Data (never track bot memory in git)
+src/utils/memory/*.db
+src/utils/memory/*.db-journal
+src/utils/memory/*.db-wal
+src/utils/memory/*.db-shm
+src/utils/memory/memory.json
+src/utils/memory/imp_memory.json
+data/
+*.sqlite3
+
+# Temporary media cache
+src/media/temp_media/*
+!src/media/temp_media/.gitkeep
+
+# System & IDE files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
